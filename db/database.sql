@@ -20,6 +20,6 @@ VALUES
     ('Ariana Grande', 'Pop'),
     ('LiSA', 'J-Pop/Rock'),
     ('Radwimps', 'J-Rock'),
-    ('One OK Rock', 'J-Rock');
+    ('One OK Rock', 'J-Rock'),
     ('Kendrick Lamar', 'Hip Hop'),
     ('Taylor Swift', 'Pop');
