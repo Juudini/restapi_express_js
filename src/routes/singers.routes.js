@@ -1,22 +1,18 @@
 import { Router } from "express";
-import {
-    getSingers,
-    getSinger,
-    postSinger,
-    patchSinger,
-    deleteSinger,
-} from "../controllers/singers.controller.js";
-
+import SingerController from "../controllers/singers.controller.js";
 const router = Router();
 
-router.get("/singers", getSingers);
+//~~> | Singer Controller
+const singerController = new SingerController();
 
-router.get("/singers/:id", getSinger);
+router.get("/", singerController.getSingers);
 
-router.post("/singers", postSinger);
+router.get("/:id", singerController.getSinger);
 
-router.patch("/singers/:id", patchSinger);
+router.post("/", singerController.postSinger);
 
-router.delete("/singers/:id", deleteSinger);
+router.patch("/:id", singerController.patchSinger);
+
+router.delete("/:id", singerController.deleteSinger);
 
 export default router;

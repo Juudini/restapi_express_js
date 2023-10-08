@@ -1,6 +1,6 @@
-# Railway REST API Project using Node.js, Express, MySQL, and Railway
+# Express REST API Project using Node.js, Express, MySQL, and Swagger
 
-This is a project that implements a REST API using Node.js, Express, MySQL, and Railway.
+This is a project that implements a REST API using Node.js, Express and MySQL.
 
 ## Description
 
@@ -8,37 +8,39 @@ The project consists of a RESTful application that utilizes Node.js and Express 
 
 ## Technologies Used
 
-- ![Node.js](https://img.shields.io/badge/Node.js-green?logo=node.js&logoColor=white&style=flat)
-- ![Express](https://img.shields.io/badge/Express-blue?logo=express&logoColor=white&style=flat)
-- ![MySQL](https://img.shields.io/badge/MySQL-blue?logo=mysql&logoColor=white&style=flat)
-- ![Railway](https://img.shields.io/badge/Railway-lightgrey?logo=railway&logoColor=white&style=flat)
+-   ![Node.js](https://img.shields.io/badge/Node.js-green?logo=node.js&logoColor=white&style=flat)
+-   ![Express](https://img.shields.io/badge/Express-blue?logo=express&logoColor=white&style=flat)
+-   ![MySQL](https://img.shields.io/badge/MySQL-blue?logo=mysql&logoColor=white&style=flat)
 
 ## Project Structure
 
 The project follows a common directory structure used in Node.js applications. Below is a brief description of the project structure:
 
-- `src`: Main directory that contains the application source code.
-  - `config`: Configuration files for the database and other environment values.
-  - `controllers`: Controllers that handle HTTP requests and perform operations on the database.
-  - `routes`: Definition of API routes and their binding to corresponding controllers.
-  - `config.js`: This file contains the application configuration variables, such as the database URL and credentials, as well as other runtime-related configurations.
-  - `db.js`: This file contains the database connection configuration using MySQL2.
-  - `index.js`: Main entry point of the application.
-  - `app.js`: This file is the main entry point of the application. It configures and initializes core components like the Express server and the database connection.
+-   `src`: Main directory that contains the application source code.
+    -   `config`: Configuration files for the database and other environment values.
+    -   `controllers`: Controllers that handle HTTP requests and perform operations on the database.
+    -   `routes`: Definition of API routes and their binding to corresponding controllers.
+    -   `config.js`: This file contains the application configuration variables, such as the database URL and credentials, as well as other runtime-related configurations.
+    -   `db.js`: This file contains the database connection configuration using MySQL2.
+    -   `index.js`: Main entry point of the application.
+    -   `app.js`: This file is the main entry point of the application. It configures and initializes core components like the Express server and the database connection.
 
 ## Installation and Configuration
 
 Follow the steps below to set up and run the application in your local environment:
 
 1. Clone this repository to your local machine:
+
 ```
 git clone https://github.com/Juudini/RESTAPI_EXPRESS_JS.git
 ```
+
 2. Navigate to the project directory:
 
 ```
 cd RESTAPI_EXPRESS_JS
 ```
+
 3. Install project dependencies:
 
 ```
