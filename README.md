@@ -1,29 +1,17 @@
-# Express REST API Project using Node.js, Express, MySQL, and Swagger
+# Express REST API Project using Node.js, Express, MySQL and Swagger Documentation
 
-This is a project that implements a REST API using Node.js, Express and MySQL.
+This is a project that implements a REST API using Node.js, Express, MySQL and Swagger Documentation.
 
 ## Description
 
-The project consists of a RESTful application that utilizes Node.js and Express as the server framework, MySQL as the database, and Railway as the cloud hosting service. It provides an API for performing CRUD (Create, Read, Update, Delete) operations on a specific entity.
+The project consists of a RESTful application that utilizes Node.js and Express as the server framework, and MySQL as the database. It provides an API for performing CRUD (Create, Read, Update, Delete) operations on a specific entity.
 
 ## Technologies Used
 
 -   ![Node.js](https://img.shields.io/badge/Node.js-green?logo=node.js&logoColor=white&style=flat)
 -   ![Express](https://img.shields.io/badge/Express-blue?logo=express&logoColor=white&style=flat)
 -   ![MySQL](https://img.shields.io/badge/MySQL-blue?logo=mysql&logoColor=white&style=flat)
-
-## Project Structure
-
-The project follows a common directory structure used in Node.js applications. Below is a brief description of the project structure:
-
--   `src`: Main directory that contains the application source code.
-    -   `config`: Configuration files for the database and other environment values.
-    -   `controllers`: Controllers that handle HTTP requests and perform operations on the database.
-    -   `routes`: Definition of API routes and their binding to corresponding controllers.
-    -   `config.js`: This file contains the application configuration variables, such as the database URL and credentials, as well as other runtime-related configurations.
-    -   `db.js`: This file contains the database connection configuration using MySQL2.
-    -   `index.js`: Main entry point of the application.
-    -   `app.js`: This file is the main entry point of the application. It configures and initializes core components like the Express server and the database connection.
+-   ![Swagger](https://img.shields.io/badge/Swagger-blue?logo=Swagger&logoColor=white&style=flat)
 
 ## Installation and Configuration
 
@@ -47,21 +35,21 @@ cd RESTAPI_EXPRESS_JS
 npm install
 ```
 
-4. Create a MySQL database and update the configuration in the `.env` file.
+4. Run database migrations to create the necessary tables.
 
-Open the `.env` file and update the values of `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, and `DB_NAME` with your MySQL database details.
+5. Start the server.
 
-5. Run database migrations to create the necessary tables.
-
-6. Start the server.
+```
+npm run dev
+```
 
 The server will be available at `http://localhost:3000`.
 
 ## Repository and Endpoint Testing
 
-You can clone the repository and test the mentioned endpoints in your local environment. Additionally, you can access the deployed version of the API on Railway through the following link:
+Now you can easily test the API and explore its endpoints using the Swagger documentation.
 
-[API on Railway](https://restapiexpressjs-production.up.railway.app/)
+You can clone the repository and test the mentioned endpoints in your local environment.
 
 Use tools like cURL, Postman, or other applications to make HTTP requests to the different endpoints and test the functionality of the API.
 
@@ -72,6 +60,7 @@ Once the server is up and running, you can use any REST client (e.g., cURL, Post
 ### - Available Endpoints:
 
 The following endpoints are available in the API:
+`BASE PATH: http://localhost:3000/api`
 
 ### `GET /singers`
 
