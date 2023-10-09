@@ -11,4 +11,7 @@ const currentDir = dirname(currentFilePath);
 // Go up one level to reach the src folder
 const rootDir = join(currentDir, "..");
 
+// Go up two levels over src folder
+export const rootDirOverSrc = join(currentDir, "../../");
+
 export const __dirname = rootDir;
