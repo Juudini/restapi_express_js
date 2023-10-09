@@ -3,8 +3,6 @@
  * tags:
  *   - name: Singers
  *     description: Operations related to singers
- *   - name: Swagger
- *     description: Operations related to Swagger documentation
  */
 
 /**
