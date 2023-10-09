@@ -1,4 +1,4 @@
-import { __dirname } from "../utils/pathUtils.js";
+import { rootDirOverSrc } from "../utils/pathUtils.js";
 
 export const swaggerOptions = {
     definition: {
@@ -14,5 +14,5 @@ export const swaggerOptions = {
             description: "Visit my portfolio for more projects.",
         },
     },
-    apis: [`${__dirname}/docs/*.js`],
+    apis: [`${rootDirOverSrc}/docs/*.js`],
 };
